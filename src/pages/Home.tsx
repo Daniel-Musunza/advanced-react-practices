@@ -1,23 +1,18 @@
-import React from 'react';
-import './App.css';
+
+import HomeShell from '../components/home/HomeShell';
 
 function Home() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-       <h1>Home</h1>
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="absolute w-full h-full">
+      <header className='w-full fixed top-0 bg-slate-600 text-white flex justify-end p-4 items-center h-10' >
+        <button>Get Started</button>
+
       </header>
+      <HomeShell />
+      <footer>
+        <h1>This is the footer</h1>
+      </footer>
     </div>
   );
 }
